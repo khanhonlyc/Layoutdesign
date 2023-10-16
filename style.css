@@ -1,0 +1,92 @@
+@font-face {
+    font-family: lato-black;
+    src: url('./font/Lato-Black.ttf');
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@600&family=Lato:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body,
+html {
+  font-size: 14px;
+  font-family: lato-black;
+  background-color: #fff;
+  margin: 0 auto;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.header {
+    width: 100%;
+    box-shadow: 0px 1px 1px black;
+}
+.container{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .icon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.container nav .link {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+.container nav .link a {
+    text-decoration: none;
+    color: inherit;
+}
+.header nav{
+    display: flex;
+    align-items: center;
+}
+.container .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.background-img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+.background-img .img-background{
+    width: 100%;
+    height: auto;
+}
+.background-img .img-small{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* slick css */
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    tran
+}
