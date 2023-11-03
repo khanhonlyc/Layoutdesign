@@ -222,12 +222,14 @@ body {
 }
 
 /* start main  */
+
+/* -- start introduce */
 .main {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     min-height: 1000px;
-    /* background-color: antiquewhite; */
-    width: 100%;
+    width: 100%; */
+    background-color: antiquewhite;
 }
 
 .introduce {
@@ -235,7 +237,7 @@ body {
     display: grid;
     margin: 50px 140px;
     background-color: #fff;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .introduce .content-wrap {
@@ -264,7 +266,8 @@ body {
     color: var(--primary-color-content);
     font-size: 16px;
 }
-.content-wrap p:last-of-type{
+
+.content-wrap p:last-of-type {
     padding-bottom: 50px;
 }
 
@@ -279,7 +282,8 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
-.content-wrap a:hover{
+
+.content-wrap a:hover {
     background-color: var(--primary-color);
     color: #fff;
 }
@@ -303,22 +307,114 @@ body {
     overflow: hidden;
     display: flex;
 }
+
 .introduce-img .right2 {
     overflow: hidden;
     display: flex;
 }
+
 .introduce-img img {
     width: 945px;
     height: 920px;
 }
-.introduce-img .img-2{
+
+.introduce-img .img-2 {
     transform: translate(-412px, -40px);
 }
-.introduce-img .img-3{
+
+.introduce-img .img-3 {
     transform: translate(-411px, -459px);
 }
 
 .introduce .introduce-content {
-    width: 100%; 
+    width: 100%;
     position: relative;
 }
+
+/* -- start activiti */
+.activiti {
+    /* background-color: #c29797; */
+    min-height: 700px;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.activity-list {
+    text-align: center;
+    gap: 30px;
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity-box-item{
+    position: relative;
+    padding: 0 32px 32px;
+    color: #fff;
+    /* background-color: #666666; */
+    width: 33.3333%;
+    height: 500px;
+    cursor: pointer;
+}
+.activity-box-item p {
+    /* position: absolute;
+    bottom: 0; */
+    margin: 60px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.activity-box-item img{
+    color: #fff;
+}
+.activity-box-item h4 {
+    height: 75px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 32px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-align: center;
+    -webkit-line-clamp: 2;
+}
+.activity-box-item .activity-group{
+    place-content: center;
+    display: grid;
+    border-radius: 50%;
+    margin: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+    background: rgba(44,102,64,.8);
+}
+.activity-box-item:hover{
+    background: var(--primary-color);
+    .activity-group{
+        background: #d1b076;
+    }
+}
+.activity-box-item h4{
+
+}
+
+.activity-wrap {}
+
+.activity-wrap img {}
+
+.activity-wrap h3 {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 38px;
+    line-height: 48px;
+}
+
+/* -- end activiti */
