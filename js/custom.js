@@ -28,3 +28,26 @@ $('.slider').slick({
     // ]
   });
       
+$('.project-slideshow').slick({
+    slidesToScroll: 1,
+    slidesToShow: 4,
+    // variableWidth: true,
+    arrows: false,
+    autoplay: true,
+    dots: false,
+    // infinite: true,
+    draggable : true,
+    autoplaySpeed: 7000,
+  });
+
+  $('.box-job-list').hover(
+    function(){
+      $(this).find('.text-wrap').show();
+      $(this).find('.text-wrap').addClass("active");
+    },
+    function(){
+      // $(this).find('.text-wrap').hide();
+      $(this).find('.text-wrap').removeClass("active");
+    }
+  )
+  // $(".text-wrap").hide();
